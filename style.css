@@ -1,0 +1,2037 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+html {
+    scroll-behavior: smooth;
+}  
+
+.background{
+    background-image: url(https://preview.colorlib.com/theme/orbit/images/hero_img.jpg.webp);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* z-index: -1; */
+    background-attachment: fixed;
+}
+.background::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+.icon-element{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 180px;
+    padding-top: 20px;
+}
+/* .icon-element {
+    display: flex;
+    width: 100%;
+    padding: 20px 10%;
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+    left: 0;
+    gap: 180px;
+    background: rgba(0, 0, 0, 0.5); 
+} */
+
+
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    z-index: 1;
+}
+.icon h2{
+    text-align: center;
+    padding-top: 2px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+}
+
+.elements{
+    width: 60%;
+    /* border: 1px solid black; */
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.elements a{
+    text-decoration: none;
+    color: #ffffff96;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%; 
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+.dropdown_menu ul{
+    display: block;
+    list-style-type: none;
+    padding: 20px;
+}
+.dropdown:hover .dropdown_menu ul li{
+    width: 120px;
+    padding-bottom: 10px;
+}
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+    opacity: 1;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.dropdown_menu-1{
+    display: none;
+    position: absolute;
+}
+.dropdown_menu ul li:hover .dropdown_menu-1{
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.dropdown_menu ul li a{
+    color: black;
+}
+.dropdown_menu ul li a:hover{
+    color: #96bb7c;
+}
+.dropdown_menu-1 ul {
+    padding: 10px;
+    margin: 0;
+}
+.James{
+    position: relative;
+    text-align: center;
+    margin-top: 160px;
+}
+.James-Anderson{
+    z-index: 1;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Nunito", sans-serif;
+    color: white !important;
+}
+.James p{
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    line-height: 2;
+}
+.James p::after{
+    content: "Colorlib";
+    color: #91b374;
+}
+.my-bio{
+    width: 82%;
+    height: 500px;
+    margin: auto;
+    /* border: 1px solid red; */
+    height: 796px;
+    margin-top: 100px;
+    display: flex;
+    gap: 90px;
+}
+.jamesImage{
+    width: 650px;
+    height: 790px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.jamesImage::before{
+    content: "";
+    width: 304px;
+    height: 264px;
+    background: url(https://preview.colorlib.com/theme/orbit/images/dots.png.webp);
+    position: absolute;
+    right: 0;
+    transform: translate(40%,-20%);
+    z-index: -1;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+}
+.my-bio-text{
+    width: 475px;
+    height: 796px;
+    /* border: 1px solid green; */
+}
+.my-bio-text h2{
+    font-size: 45px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.my-bio-text p{
+    font-size: 16px;
+    color: #939393;
+    font-family: "Nunito", sans-serif;
+    padding: 10px;
+    letter-spacing: 0.1px;
+}
+.my-5{
+    width: 422px;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 40px;
+}
+.skill{
+    width: 417px;
+    height: 60px;
+    /* border: 1px solid black; */
+}
+.skill h3{
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.progress{
+    width: 412px;
+    height: 4px;
+    background: #e9ecef;
+}
+.design{
+    width: 85%;
+    height: 4px;
+    background-color: #96bb7c;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.design::after{
+    content: "";
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 13px;
+    height: 10px;
+    background-color: #91b374;
+    position: absolute;
+    right: -6px;
+    top: 5px;
+}
+.progress span{
+    height: 14px;
+    background-color: #96bb7c;
+    font-size: 11px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 335px;
+}
+.html{
+    width: 98%;
+    height: 4px;
+    background-color: #96bb7c;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.html::after{
+    content: "";
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 13px;
+    height: 10px;
+    background-color: #91b374;
+    position: absolute;
+    right: -6px;
+    top: 5px;
+}
+.progress .span2{
+    height: 14px;
+    background-color: #96bb7c;
+    font-size: 11px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 386px;
+}
+.css3{
+    width: 97%;
+    height: 4px;
+    background-color: #96bb7c;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.css3::after{
+    content: "";
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 13px;
+    height: 10px;
+    background-color: #91b374;
+    position: absolute;
+    right: -6px;
+    top: 5px;
+}
+.progress .span3{
+    height: 14px;
+    background-color: #96bb7c;
+    font-size: 11px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 383px;
+}
+.word-press{
+    width: 88%;
+    height: 4px;
+    background-color: #96bb7c;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.word-press::after{
+    content: "";
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 13px;
+    height: 10px;
+    background-color: #91b374;
+    position: absolute;
+    right: -6px;
+    top: 5px;
+}
+.progress .span4{
+    height: 14px;
+    background-color: #96bb7c;
+    font-size: 11px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 347px;
+}
+.bootstarp{
+    width: 97%;
+    height: 4px;
+    background-color: #96bb7c;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.bootstarp::after{
+    content: "";
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 13px;
+    height: 10px;
+    background-color: #91b374;
+    position: absolute;
+    right: -6px;
+    top: 5px;
+}
+.progress .span5{
+    height: 14px;
+    background-color: #96bb7c;
+    font-size: 11px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    text-align: center;
+    margin-left: 382px;
+}
+.button1{
+    margin-left: 7px;
+    margin-top: 40px;
+}
+.button1{
+    width: 112px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: #91b374;
+    font-size: 11px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.button1:hover{
+    background-color: #96bb7c;
+    transition: 0.3s;
+}
+.button2{
+    width: 157px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* background-color: #696969; */
+    background-color: #6c757d;
+    transition: 0.3s;
+}
+.button2:hover{
+    background-color: #696969;
+    transition: 0.3s;
+}
+.my-portfolio{
+    width: 82%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 240px;
+}
+.my-portfolio h2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+.categories{
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 30px;
+}
+.my-portfolio a{
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    margin-right: 40px;
+    color: grey;
+}
+.category:hover{
+    color: #8aab6d;
+}
+#all{
+    color: #8aab6d;
+}
+.image-groups{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+.group1-images{
+    width: 350px;
+}
+.group-image1{
+    width: 100%;
+    height: 233px;
+    z-index: 0;
+    transition: transform 0.8s ease-in-out;
+}
+.image{
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.image::before{
+    content: "Card Vol.3";
+    color: #fff;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+.image:hover::before{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.image:hover .group-image1 {
+    transform: scale(1.1); 
+}
+
+.group2-images{
+    width: 350px;
+    /* height: 760px; */
+    /* border: 1px solid green; */
+}
+.group-image2{
+    width: 100%;
+    z-index: 0;
+    transition: transform 0.8s ease-in-out;
+}
+
+.image2{
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.image2::before{
+    content: "House Design";
+    color: #fff;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+.image2:hover::before{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.image2:hover .group-image2 {
+    transform: scale(1.1); 
+}
+.group3-images{
+    width: 350px;
+    /* height: 760px; */
+    /* border: 1px solid blue; */
+}
+.group-image3{
+    width: 100%;
+    z-index: 0;
+    transition: transform 0.8s ease-in-out;
+}
+.image3{
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.image3::before{
+    content: "House Design";
+    color: #fff;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+.image3:hover::before{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.image3:hover .group-image3 {
+    transform: scale(1.1); 
+}
+
+.services{
+    width: 82%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 190px;
+}
+.services h2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.sub-services{
+    display: flex;
+    justify-content: space-between;
+}
+.service1, .service2, .service3{
+    width: 350px;
+    height: 305px;
+    border: 1px solid #CECECE;
+    border-radius: 5px;  
+    padding: 30px;
+}
+.service1 h3{
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.service2 h3{
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.service3 h3{
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.service1 p{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #939393;
+}
+.service2 p{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #939393;
+}
+.service3 p{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #939393;
+}
+.icon1, .icon2, .icon3{
+    text-align: center;
+    margin-top: 20px;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    color: #8aab6d;
+}
+.resume{
+    width: 85%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 190px;
+}
+.sub-resume{
+    display: flex;
+    gap: 145px;
+}
+.resume h2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.james-image{
+    width: 350px;
+    height: 460px;
+    /* border: 1px solid red; */
+}
+.sub-james-image{
+    width: 100%;
+    height: 100%;
+}
+.work-experience h3{
+    font-size: 25px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.front-end-developer{
+    width: 650px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.part1{
+    width: 300px;
+    height: 51px;
+}
+.part2{
+    width: 240px;
+    height: 51px;
+}
+
+.part1 h4{
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.part1 .svg1, .svg2, .svg3, .svg4, .svg5, .svg6{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    
+}
+
+.part1 .facebook{
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    color: #939393;
+    margin-right: 10px;
+}
+.part2 .fulltime{
+    width: 108px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 7px 20px;
+    background-color: #f4f8f2;
+    margin-left: 128px;
+}
+.fulltime p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+    color: #96bb7c;
+    text-transform: uppercase;
+}
+.part2 .svg1{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.part2 .svg2{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.part2 .svg3{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 33px;
+}
+.part2 .svg4{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 122px;
+}
+.part2 .svg5{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+.part2 .svg6{
+    width: 14px;
+    height: 14px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.part2 .facebook{
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    color: #939393;
+    text-align: left;
+}
+
+.front-end-engineer, .web-designer, 
+.lead-front-end-engineer, .master-software-engineering,
+ .batchelor-software-university{
+    width: 650px;
+    height: 72px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.work-experience .education{
+    margin-top: 50px;
+}
+
+.custom-hr{
+    height: 1px;
+    border: none;
+    background-color: #e8e7e7;;
+}
+.happy-clients{
+    width: 100%;
+    background-color: #f8f9fa;
+    margin-top: 100px;
+}
+
+.sub-happy-clients{
+    width: 85%;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.sub-happy-clients h2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.cards{
+    width: 100%;
+    /* border: 1px solid green; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.img-card{
+    width: 571px;
+    height: 293px;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 35px;
+}
+.image-person{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1); 
+}
+.person{
+    width: 85%;
+    border-radius: 100%;
+    margin: 5px;
+}
+.card{
+    width: 430px;
+    height: 229px;
+    /* border: 1px solid red; */
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1); 
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-top: 30px;
+    position: relative;
+}
+.card::before{
+    content: "";
+    clip-path: polygon(100% 45%, 0 45%, 100% 100%);
+    width: 20px;
+    height: 35px;
+    background-color: #fff;
+    position: absolute;
+    left: -15px;
+}
+.card p{
+    font-size: 16px;
+    color: #939393;
+    line-height: 1.6;
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.card span{
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    font-family: "Nunito", sans-serif;
+}
+.card span:after{
+    content: "XYZ Inc";
+    color: #91b374;
+    cursor: pointer;
+}
+.read-on-medium{
+    width: 62%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 110px;
+}
+.read-on-medium h2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.medium{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.element{
+    height: 70px;
+    margin-bottom: 20px;
+}
+.element p{
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    color: #ccc;
+    letter-spacing: .2rem;
+}
+.element h3{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.medium span{
+    font-size: 12px;
+    letter-spacing: .2rem;
+    color: #ccc;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+}
+.custom-hr2{
+    height: 1px;
+    border: none;
+    background-color: #e8e7e7;
+    margin-bottom: 30px;
+}
+
+.contact-me{
+    width: 83%;
+    margin: auto;
+    margin-top: 210px;
+    margin-bottom: 70px;
+}
+.contact-me h2{
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.side{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    width: 60%;
+}
+.right-side{
+    width: 30%;
+}
+.left-side label{
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: #939393;
+    line-height: 1.6;
+}
+.fullName{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.firstName, .lastName{
+    width: 100%;
+}
+.form-group{
+    width: 100%;
+    height: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid #43434d;
+}
+.form-group:hover{
+    border-bottom: 1px solid #8aab6d;
+}
+.email, .message{
+    margin-bottom: 15px;
+}
+.form-message{
+    width: 100%;
+    height: 166px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 1px solid #43434d;
+}
+.form-message:hover{
+    border-bottom: 1px solid #8aab6d;
+}
+.left-side button{
+    width: 157px;
+    height: 48px;
+    cursor: pointer;
+    background-color: #96bb7c;
+    border: none;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    color: #fff;
+}
+.left-side button:hover{
+    background-color: #91b374;
+}
+.right-side h3{
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 8px;
+}
+.contact-info{
+    width: 100%;
+}
+.contact-info li{
+    list-style-type: none;
+    padding: 10px;
+}
+.location{
+    color: black;
+}
+.locations{
+    font-size: 13px;
+}
+.address, .phone, .email, .globe{
+    font-family: "Nunito", sans-serif;
+}
+.info{
+    color: #96bb7c;
+    margin-right: 5px;
+}
+.footer{
+    width: 100%;
+    background-color: #EFEFEF;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.sub-footer{
+    width: 85%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-footer h3{
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.about-connect{
+    width: 375px;
+}
+.about-connect p{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.media{
+    width: 30px;
+    height: 30px;
+    background-color: #777;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.media:hover{
+    background-color: #91b374;
+    transition: 0.3s;
+}
+.social-media-icons{
+    display: flex;
+    gap: 5px;
+}
+.media-icon{
+    margin: 7px;
+    color: #fff;
+    font-size: 14px;
+}
+.navigation li{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #939393;
+    line-height: 2;
+    list-style-type: none;
+    font-weight: 400;
+}
+.service li{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #939393;
+    line-height: 2;
+    list-style-type: none;
+    font-weight: 400;
+}
+.contact li{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: grey;
+    line-height: 2;
+    list-style-type: none;
+    font-weight: 400;
+}
+.footer-text{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 14px;
+    color: #888;
+    font-family: "Nunito", sans-serif;
+}
+.footer-text span{
+    color: #96bb7c;
+}
+.heart{
+    color: #dc3545;
+}
+.menu-bar{
+    width: 40px;
+    height: 40px;
+    display: none;
+    z-index: 1;
+}
+
+@media (min-width: 1200px){
+    .services{
+        width: 1140px;
+    }
+    .sub-services{
+        width: 1140px;
+        gap: 30px;
+    }
+    .sub-happy-clients{
+        width: 85%;
+    }
+    .img-card{
+        width: 510px;
+        height: 296px;
+    }
+    .cards{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .card{
+        width: 400px;
+        height: 250px;
+    } 
+    .resume{
+        width: 1140px;
+    }
+    
+    .sub-resume{
+        justify-content: space-between;
+    }
+    .work-experience{
+        width: 600px;
+    }
+    .part2{
+        width: 291px;
+    }
+    .my-portfolio{
+        width: 1140px;
+        margin-top: 220px;
+    }
+    .image-groups{
+        width: 1140px;
+    }
+    .group1-images{
+        width: 350px;
+    }
+    .group-image1{
+        height: 233px;
+    }
+    .image::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .group2-images{
+        width: 350px;
+    }
+    .image2::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .group3-images{
+        width: 350px;
+    }
+    .image3::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .my-bio{
+        width: 1140px;
+    }
+    .sub-happy-clients, .contact-me, .sub-footer{
+        width: 1140px;
+    }
+    .read-on-medium{
+        width: 825px;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .my-bio{
+        width: 960px;
+        height: 700px;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .jamesImage{
+        width: 497px;
+        height: 657px;
+    }
+    .my-bio-text{
+        width: 400px;
+        height: 700px;
+    }
+    .my-bio-text p{
+        width: 370px;
+    }
+    .my-5{
+         width: 370px; 
+         height: 270px; 
+    }
+    .skill{
+        width: 350px;
+    }
+    .progress{
+        width: 350px;
+    }
+    .progress span{
+        margin-left: 281px;
+    }
+    .progress .span2{
+        margin-left: 328px;
+    }
+    .progress .span3{
+        margin-left: 324px;
+    }
+    .progress .span4{
+        margin-left: 293px;
+    }
+    .progress .span5{
+        margin-left: 325px;
+    }
+    .my-portfolio{
+        width: 960px;
+        margin-top: 220px;
+    }
+    .group1-images{
+        width: 300px;
+    }
+    .group-image1{
+        height: 193px;
+    }
+    .image::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .group2-images{
+        width: 300px;
+    }
+    .image2::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .group3-images{
+        width: 300px;
+    }
+    .image3::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .services{
+        width: 960px;
+    }
+    .service1, .service2, .service3{
+        width: 290px;
+        height: 330px;
+    }
+    .resume{
+        width: 960px;
+    }
+    .james-image{
+        width: 300px;
+        height: 383px;
+    }
+    .sub-resume{
+        gap: 100px;
+    }
+    .work-experience{
+        width: 560px;
+    }
+    .front-end-developer, .front-end-engineer, .web-designer, 
+    .lead-front-end-engineer, .master-software-engineering,
+     .batchelor-software-university{
+        width: 565px;
+    }
+    .sub-happy-clients{
+        width: 90%;
+    }
+    .img-card{
+        width: 445px;
+        height: 296px;
+    }
+    .cards{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .card{
+        width: 340px;
+        height: 280px;
+    } 
+
+    .read-on-medium{
+        width: 690px;
+    }
+    .contact-me{
+        width: 960px;
+    }
+    .right-side{
+        width: 33%;
+    }
+    .left-side{
+        width: 55%;
+    }
+    .sub-footer{
+        width: 960px;
+        justify-content: space-around;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .main{
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+        display: block;
+    }
+    .elements{
+        display: none;
+    }
+    .icon-element{
+        width: 690px;
+        justify-content: space-between;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .bar{
+        color: #fff;
+        font-size: 40px;
+    }
+    .my-bio{
+        display: block;
+        width: 690px;
+        height: 1771px;
+        margin-top: 70px;
+    }
+    .jamesImage{
+        width: 100%;
+        height: 912px;
+        margin-bottom: 40px;
+    }
+    .my-bio-text{
+        width: 100%;
+        height: 622px;
+    }
+    .my-bio-text h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .my-5{
+        width: 100%;
+    }
+    .skill, .progress{
+        width: 100%;
+    }
+    .progress span{
+        margin-left: 571px;
+    }
+    .progress .span2{
+        margin-left: 661px;
+    }
+    .progress .span3{
+        margin-left: 653px;
+    }
+    .progress .span4{
+        margin-left: 591px;
+    }
+    .progress .span5{
+        margin-left: 654px;
+    }
+    .button1{
+        margin-top: 20px;
+    }
+    .my-portfolio{
+        width: 720px;
+        margin-top: 0px;
+    }
+    .my-portfolio h2{
+        font-size: 35px;
+    }
+    .group1-images, .group2-images, .group3-images{
+        width: 210px;
+    }
+    .group-image1{
+        height: 140px;
+    }
+    .image-groups{
+        justify-content: space-around;
+    }
+    .services{
+        width: 720px;
+        margin-top: 150px;
+    }
+    .services h2{
+        font-size: 35px;
+    }
+    .sub-services{
+       margin: auto;
+       width: 700px;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+       gap: 30px;
+    }
+    .service1, .service2, .service3{
+        width: 330px;
+        height: 305px;
+    }
+    .image::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .image2::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .image3::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .resume{
+        width: 700px;
+    }
+    .resume h2{
+        font-size: 35px;
+    }
+    .sub-resume{
+        display: block;
+    }
+    .james-image{
+        width: 100%;
+        height: 912px;
+    }
+    .front-end-developer, .front-end-engineer, .web-designer, 
+    .lead-front-end-engineer, .master-software-engineering,
+     .batchelor-software-university{
+        width: 700px;
+    }
+    .happy-clients h2{
+        font-size: 35px;
+    }
+    .sub-happy-clients{
+        width: 690px;
+    }
+    .img-card{
+        width: 330px;
+        height: 424px;
+    }
+    .cards{
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .card{
+        width: 220px;
+        height: 408px;
+    }
+    .read-on-medium{
+        width: 690px;
+    }
+    .read-on-medium h2{
+        font-size: 35px;
+        margin-top: 90px;
+    }
+    .medium{
+        width: 510px;
+        height: 94px;
+        margin: auto;
+    }
+    .custom-hr2{
+        width: 510px;
+        margin-left: 60px;
+    }
+    .medium span{
+        margin-top: 20px;
+    }
+    .contact-me{
+        margin-top: 180px;
+        width: 690px;
+    }
+    .contact-me h2{
+        font-size: 35px;
+    }
+    .side{
+        display: block;
+    }
+    .left-side, .right-side{
+        width: 100%;
+    }
+    .left-side{
+        margin-bottom: 20px;
+    }
+    .sub-footer{
+        width: 690px;
+        display: block;
+    }
+    .about-connect{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .navigation, .service{
+        margin-bottom: 20px;
+    }
+}
+@media(min-width: 576px) and (max-width: 767px){
+    .main{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .elements{
+        display: none;
+    }
+    .icon-element{
+        justify-content: space-between;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .bar{
+        color: #fff;
+        font-size: 40px;
+    }
+    .James h2{
+        font-size: 30px;
+    }
+    .James p{
+        font-size: 16px;
+    }
+    .my-bio{
+        display: block;
+        width: 510px;
+        height: 1396px;
+        margin-top: 70px;
+    }
+    .jamesImage{
+        width: 100%;
+        height: 674px;
+        margin-bottom: 40px;
+    }
+    .my-bio-text{
+        width: 100%;
+        height: 680px;
+    }
+    .my-bio-text h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .my-5{
+        width: 100%;
+    }
+    .skill, .progress{
+        width: 100%;
+    }
+    .progress span{
+        margin-left: 417px;
+    }
+    .progress .span2{
+        margin-left: 482px;
+    }
+    .progress .span3{
+        margin-left: 478px;
+    }
+    .progress .span4{
+        margin-left: 432px;
+    }
+    .progress .span5{
+        margin-left: 477px;
+    }
+    .button1{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .my-portfolio{
+        width: 510px;
+        margin-top: 150px;
+    }
+    .categories a.category2{
+        display: block;
+        margin-top: 40px;
+    }
+    .my-portfolio h2{
+        font-size: 32px;
+    }
+    .group1-images, .group2-images, .group3-images{
+        width: 150px;
+    }
+    .group-image1{
+        height: 100px;
+    }
+    .image::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .image2::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .image3::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .services{
+        margin-top: 150px;
+        width: 510px;
+    }
+    .services h2{
+        font-size: 32px;
+    }
+    .sub-services{
+        display: block;
+    }
+    .service1, .service2, .service3{
+        width: 510px;
+        height: 254px;
+        margin-bottom: 40px;
+    }
+    .resume{
+        margin-top: 150px;
+        width: 530px;
+    }
+    .resume h2{
+        font-size: 32px;
+    }
+    .sub-resume{
+        width: 100%;
+        display: block;
+    }
+    .james-image{
+        width: 530px;
+        height: 674px;
+    }
+    .work-experience{
+        width: 100%;
+    }
+    .front-end-developer, .front-end-engineer, .web-designer, 
+    .lead-front-end-engineer, .master-software-engineering,
+     .batchelor-software-university{
+        width: 530px;
+        gap: 0px;
+    }
+    .part2{
+        width: 264px;
+        height: 51px;
+        margin-left: 0px;
+    }
+    
+    .sub-happy-clients{
+        width: 510px;
+        padding-bottom: 50px;
+    }
+    .sub-happy-clients h2{
+        font-size: 32px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .card{
+        width: 410px;
+        height: 229px;
+    }
+    .read-on-medium{
+        margin-top: 70px;
+        width: 510px;
+    }
+    .read-on-medium h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .medium{
+        display: block;
+    }
+    .element{
+        height: 43px;
+    }
+    .custom-hr2{
+        margin-top: 30px;
+    }
+    .element h3{
+        font-weight: 400;
+    }
+    .contact-me{
+        margin-top: 150px;
+        width: 510px;
+    }
+    .contact-me h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .side{
+        display: block;
+    }
+    .left-side, .right-side{
+        width: 100%;
+    }
+    .left-side{
+        margin-bottom: 20px;
+    }
+    .sub-footer{
+        width: 510px;
+        display: block;
+    }
+    .about-connect{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .navigation, .service{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 575px){
+    .main{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .elements{
+        
+        display: none;
+    }
+    .icon-element{
+        /* width: 540px; */
+        width: 80%;
+        height: auto;
+        justify-content: space-between;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .bar{
+        color: #fff;
+        font-size: 35px;
+    }
+    .James h2{
+        font-size: 30px;
+    }
+    .James p{
+        font-size: 16px;
+    }
+    .my-bio{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin-top: 70px;
+    }
+    .jamesImage{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .my-bio-text{
+        width: 100%;
+        height: auto;
+    }
+    .my-bio-text h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .my-5{
+        width: 100%;
+    }
+    .skill, .progress{
+        width: 100%;
+    }
+    .progress span{
+        margin-left: 80%;
+    }
+    .progress .span2{
+        margin-left: 93%;
+    }
+    .progress .span3{
+        margin-left: 92%;
+    }
+    .progress .span4{
+        margin-left: 83%;
+    }
+    .progress .span5{
+        margin-left: 92%;
+    }
+    .button1{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .my-portfolio{
+        width: 90%;
+        margin-top: 100px;
+    }
+    .categories a.category2{
+        display: block;
+        margin-top: 40px;
+    }
+    .categories a.category3{
+        margin-top: 40px;
+    }
+    .my-portfolio h2{
+        font-size: 32px;
+    }
+    .image-groups{
+        display: block;
+    }
+    .group1-images, .group2-images, .group3-images{
+        width: 100%;
+    }
+    .group-image1{
+        width: 100%;
+        height: auto;
+    }
+    .image::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .image2::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .image3::before{
+        content: "";
+        padding-top: 0px;
+    }
+    .services{
+        margin-top: 150px;
+        width: 90%;
+    }
+    .services h2{
+        font-size: 32px;
+    }
+    .sub-services{
+        display: block;
+    }
+    .service1, .service2, .service3{
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .resume{
+        margin-top: 150px;
+        width: 90%;
+    }
+    .resume h2{
+        font-size: 32px;
+    }
+    .sub-resume{
+        width: 100%;
+        display: block;
+    }
+    .james-image{
+        width: 100%;
+        height: auto;
+    }
+    .work-experience{
+        width: 100%;
+    }
+    .front-end-developer, .front-end-engineer, .web-designer, 
+    .lead-front-end-engineer, .master-software-engineering,
+     .batchelor-software-university{
+        width: 100%;
+        gap: 0px;
+    }
+    .front-end-developer, .front-end-engineer, .web-designer, 
+    .lead-front-end-engineer, .master-software-engineering,
+     .batchelor-software-university{
+        height: auto;
+    }
+    .part1{
+        width: auto;
+        height: auto;
+    }
+    .part2{
+        width: 200px;
+        height: auto;
+        margin-left: 0px;
+    }
+    .part2 .fulltime{
+        margin-left: auto;
+    }
+    /* .sub-happy-clients{
+        width: 90%;
+        padding-bottom: 50px;
+    }
+    .sub-happy-clients h2{
+        font-size: 32px;
+    }
+    .img-card{
+        width: 100%;
+        height: auto;
+    }
+    .cards{
+        width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        height: auto;
+        width: 410px;
+        padding-bottom: 20px;
+    }
+    .image-person {
+        width: 70px !important; 
+        height: 70px !important; 
+    } */
+
+    .sub-happy-clients{
+        width: 80%;
+    }
+    .read-on-medium{
+        margin-top: 70px;
+        width: 90%;
+    }
+    .read-on-medium h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .medium{
+        display: block;
+    }
+    .element{
+        height: 60px;
+    }
+
+    .custom-hr2{
+        margin-top: 50px;
+        /* margin-top:auto; */
+    }
+    .element h3{
+        font-weight: 400;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .medium span{
+        padding-top: 10px;
+    }
+    .contact-me{
+        margin-top: 150px;
+        /* width: 540px; */
+        width: 90%;
+    }
+    .contact-me h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .side{
+        display: block;
+    }
+    .left-side, .right-side{
+        width: 100%;
+    }
+    .left-side{
+        margin-bottom: 20px;
+    }
+    .sub-footer{
+        width: 540px;
+        display: block;
+    }
+    .about-connect{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .navigation, .service{
+        margin-bottom: 20px;
+    }
+    .sub-footer{
+        width: 90%;
+        display: block;
+    }
+    .about-connect{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .navigation, .service{
+        margin-bottom: 20px;
+    }
+} 
